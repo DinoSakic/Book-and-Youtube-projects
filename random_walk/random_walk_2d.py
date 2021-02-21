@@ -1,7 +1,7 @@
 import numpy as np 
 import pylab 
 import random 
-n = 1000  # broj koraka
+n = 3000  # broj koraka
 x = np.zeros(n)  # x i y su koordinate
 y = np.zeros(n) 
 direkcija=["y+","y-","x+","x-"]  # 4 smjera kretanja

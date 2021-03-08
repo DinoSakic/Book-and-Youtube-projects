@@ -8,7 +8,7 @@ screen = pygame.display.set_mode((1024, 700), pygame.RESIZABLE)
 
 NUM_OF_ENEMY = 20
 default_size = (1024, 700)
-counter = 0
+# counter = 0
 resize = False
 background = pygame.image.load('background.png')
 enemy_slika = pygame.image.load('mouse.png')
@@ -52,7 +52,6 @@ class Bullet:
     def fire(self, x, y):
         self.state = 'fire'
         screen.blit(self.slika, (x + 24, y - 16))
-
 
 class Enemy:
     def __init__(self, x_change, y_change, SPEED, CHANGE):
@@ -162,7 +161,6 @@ while run:
                 player.x_change = 0
             if event.key == pygame.K_UP or event.key == pygame.K_DOWN:
                 player.y_change = 0
-
 
     # granice za player
     #   -velicina slike je 64x64

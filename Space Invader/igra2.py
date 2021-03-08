@@ -281,4 +281,4 @@ while run:
     Tekts.show_score(score)
 
     pygame.display.update()
-print(player.x, player.y, bullet1.x, bullet1.y)
+
